@@ -22,7 +22,7 @@
   "cds": {
     "requires": {
       "auth": "xsuaa",
-      "db": "sql"
+      "db": "hana"
     }
   }
 }
