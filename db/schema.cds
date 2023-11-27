@@ -1,4 +1,4 @@
-namespace hc450.officesupplies;
+namespace hc450_officesupplie;
 
 using {Currency} from '@sap/cds/common';
 
@@ -6,8 +6,8 @@ entity Products {
  @Common.Label : 'UUID'
  key ID : UUID;
  identifier : String @Common.Label : 'ProductID';
- title : localized String @(Common.Label : 'Name');
- description : localized String;
+ title : String @(Common.Label : 'Name');
+ description : String;
  availability : Integer;
  storage_capacity : Integer;
  criticality : Integer;
