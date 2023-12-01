@@ -11,7 +11,9 @@
     "@sap/hana-client": "^2.18.27",
     "@sap/xssec": "^3",
     "express": "^4",
-    "passport": "^0"
+    "passport": "^0",
+    "@sap/hdbext": "8.0.2",
+    "sap-hdbext-promisfied": "^2.202108.1"
   },
   "devDependencies": {
     "@cap-js/sqlite": "^1",
