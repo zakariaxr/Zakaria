@@ -28,4 +28,17 @@ module.exports = cds.service.impl(function () {
             return
         }
     })
+    this.on("error", (err, req) => {
+        switch (err.message) {
+            case "UNIQUE_CONSTRAINT_VIOLATION":
+                err.message = "The entry already exists.by zakaria";
+                break;
+
+            default:
+                err.message =
+                    "An error occured. Please retry. Technical error message: " +
+                    err.message + " By Zakaria";
+                break;
+        }
+    });
 })
