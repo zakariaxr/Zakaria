@@ -9,19 +9,21 @@
     "@sap/cds": "^7",
     "@sap/cds-hana": "^2",
     "@sap/hana-client": "^2.18.27",
+    "@sap/hdbext": "8.0.2",
     "@sap/xssec": "^3",
     "express": "^4",
     "passport": "^0",
-    "@sap/hdbext": "8.0.2",
     "sap-hdbext-promisfied": "^2.202108.1"
   },
   "devDependencies": {
     "@cap-js/sqlite": "^1",
     "@sap/cds-dk": "^7",
-    "@sap/hdi-deploy": "4.8.2"
+    "@sap/hdi-deploy": "4.8.2",
+    "@sap/ux-specification": "^1.120.0"
   },
   "scripts": {
-    "start": "cds-serve"
+    "start": "cds-serve",
+    "watch-project1": "cds watch --open project1/webapp/index.html?sap-ui-xx-viewCache=false"
   },
   "cds": {
     "requires": {
@@ -30,5 +32,8 @@
     "hana": {
       "deploy-format": "hdbtable"
     }
-  }
+  },
+  "sapux": [
+    "app/project1"
+  ]
 }
